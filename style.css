@@ -1,0 +1,80 @@
+/* colori:
+grigio chiaro: #efefef
+grigio scuro: #a9a9a9
+rosso: #fc4a1a
+azzurro: #4abdac
+giallo: #f7b733
+ */
+
+body{
+  background-color: #efefef;
+  scroll-behavior: smooth;
+}
+
+#barra{
+  position: fixed;
+  left: 0vw;
+  top: 0vh;
+  width: 100vw;
+  height: 10vh;
+  background-color: #4abdac
+}
+
+.linksbarra{
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 3.5vh;
+  font-size: 3vh;
+}
+
+.linksbarra a{
+  padding: 2.5vh;
+}
+
+.pezzo{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  width: 80vw;
+  height: 80vh;
+}
+
+
+
+.rettangoloportfolio{
+  background-color: #f7b733;
+  width: 50vw;
+  height: 50vh;
+  border-radius: 25px;
+  z-index: -1;
+}
+
+.rettangolocontacts{
+  margin-left: 5vw;
+  background-color: #fc4a1a;
+  width: 50vw;
+  height: 50vh;
+  border-radius: 25px;
+  z-index: -1;
+}
+
+a:link {
+   color: black;
+   text-decoration: none;
+}
+
+a:visited {
+   color: black;
+   text-decoration: none;
+}
+
+a:hover {
+   color: #fc4a1a;
+   text-decoration: none;
+}
+
+a:active {
+   color: white;
+   text-decoration: none;
+}
