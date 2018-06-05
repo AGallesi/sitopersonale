@@ -3,7 +3,7 @@ grigio chiaro: #efefef
 grigio scuro: #a9a9a9
 rosso: #fc4a1a
 azzurro: #4abdac
-giallo: #f7b733
+giallo:  #f7b733
 
 ---
 
@@ -18,21 +18,37 @@ body{
   scroll-behavior: smooth;
 }
 
+#home{
+  height: 100%;
+  padding-left: 15%;
+  padding-top: 20%;
+}
 
 #barra{
   position: fixed;
-  left: 0vw;
-  top: 0vh;
-  width: 100vw;
-  height: 10vh;
-  background-color: #4abdac
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 10%;
+  background-color: #4abdac;
+  z-index: 1;
+}
+
+.homeheader{
+  font-family: 'Passion One', cursive;
+  font-size: 15vh;
+}
+
+.hometext{
+  font-family: 'Roboto Slab', serif;
+  font-size: 5vh;
 }
 
 .logo{
   font-family: 'Passion One', cursive;
   margin-top: 1.5vh;
   font-size: 7vh;
-  padding-left: 5vw;
+  padding-left: 15%;
   float: left;
 }
 
@@ -41,11 +57,11 @@ body{
   font-family: 'Passion One', cursive;
   margin-top: 3.5vh;
   font-size: 3vh;
-  padding-right: 5vw;
+  padding-right: 15%;
 }
 
 .linksbarra a{
-  padding: 2.5vh;
+  padding: 2.5%;
 }
 
 .pezzo{
@@ -53,8 +69,8 @@ body{
   padding-bottom: 10vh;
   padding-left: 10vw;
   padding-right: 10vw;
-  width: 100vw;
-  height: 100vh;
+  width: 75vw;
+  height: 75vh;
 }
 
 .blank-space{
@@ -62,24 +78,48 @@ body{
   height:10%;
 }
 
-.rettangoloportfolio{
+.rettangologiallo{
   background-color: #f7b733;
   width: 50vw;
   height: 50vh;
   border-radius: 25px;
-  z-index: -1;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
-.rettangolocurriculum{
+.rettangologiallo:after{
+  content:'';
+  display: block;
+  width: 90%;
+  height: 10%;
+  box-shadow: 0 2px 150px #000000, 0 2px 120px #f7b733;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  z-index: -1;
+}
+
+.rettangolorosso{
   background-color: #fc4a1a;
   width: 50vw;
   height: 50vh;
   border-radius: 25px;
-  z-index: -1;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+}
+
+.rettangolorosso:after{
+  content:'';
+  display:block;
+  width: 90%;
+  height: 10%;
+  box-shadow: 0 2px 150px #000000, 0 2px 120px #fc4a1a;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  z-index: -1;
 }
 
 .testo{
@@ -87,11 +127,12 @@ body{
   color: white;
 }
 
-h1{
+.cardstitle{
   font-family: 'Passion One', cursive;
   color:white;
   font-size: 5vh;
 }
+
 
 a:link {
    color: black;
