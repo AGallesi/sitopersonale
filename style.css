@@ -34,6 +34,10 @@ body{
   z-index: 1;
 }
 
+#mainImage{
+  width: 21vw;
+}
+
 .homeheader{
   font-family: 'Passion One', cursive;
   font-size: 15vh;
@@ -133,6 +137,27 @@ body{
   font-size: 5vh;
 }
 
+.galleria{
+  float:right;
+}
+
+.descrizione{
+  width: 20vw;
+  position: relative;
+  top: -40%;
+  float: left;
+}
+
+.thumbnail{
+  width: 7vw;
+  float:left;
+  opacity: .5;
+}
+
+.thumbnail:hover{
+  opacity: 1;
+  cursor: pointer;
+}
 
 a:link {
    color: black;
