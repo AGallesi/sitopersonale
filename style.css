@@ -193,6 +193,7 @@ body{
 
 .descrizione{
   width: 20vw;
+  height: 60%;
   position: relative;
   top: -40%;
   float: left;
