@@ -194,6 +194,7 @@ body{
 .descrizione{
   width: 20vw;
   height: 60%;
+  overflow-y: scroll;
   position: relative;
   top: -40%;
   float: left;
