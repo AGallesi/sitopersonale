@@ -8,11 +8,36 @@
 
    <script type="text/javascript">
 
+   $(document).ready(function () {
+      $('#CRACKED').click(function(){
+          $("#imgLink").attr("href", "cracked.html");
+          $("#mainImage").attr("src", "images/CRACKED/CrackedVinyl.png");
+      });
+     });
+
+   $(document).ready(function () {
+        $('#PakiRabanne').click(function(){
+            $("#imgLink").attr("href", "paki.html");
+            $("#mainImage").attr("src", "images/PakiRabanne/PakiRabanne Vinyl.png");
+        });
+       });
+
+   $(document).ready(function () {
+          $('#americansolution').click(function(){
+              $("#imgLink").attr("href", "american.html");
+              $("#mainImage").attr("src", "images/This is America/American Solution - Highschool Drama (Vinyl).png");
+          });
+         });
+
+
+
    </script>
 
 </header>
 
 <body>
+
+
 
 <div id="barra">
   <p class="logo">AG</p>
@@ -42,7 +67,7 @@
   <div class="corpo">
     <h1 class="cardstitle">Portfolio</h1>
     <div class="galleria">
-      <img id="mainImage" src="images/CRACKED/CrackedVinyl.png">
+      <a id="imgLink" href="cracked.html"><img id="mainImage" src="images/CRACKED/CrackedVinyl.png"></a>
       <br/>
       <div id="divContainer">
         <img id="CRACKED" class="thumbnail" src="images/CRACKED/CrackedVinyl.png">

@@ -35,7 +35,23 @@ body{
 }
 
 #mainImage{
-  width: 21vw;
+  width: 21.2vw;
+  border-radius: 5px;
+  padding: 1px;
+}
+
+#lightbox{
+  position:absolute;
+  height: 60%;
+  border-radius: 10px;
+  left: 20%;
+  top: 10%;
+  display: none;
+}
+
+#lightbox img{
+  width: 100%;
+  height: auto;
 }
 
 .homeheader{
@@ -126,14 +142,48 @@ body{
   z-index: -1;
 }
 
+.rettangoloblu{
+  background-color: #4abdac;
+  width: 50vw;
+  height: 50vh;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.rettangoloblu:after{
+  content:'';
+  display:block;
+  width: 90%;
+  height: 10%;
+  box-shadow: 0 2px 150px #000000, 0 2px 120px #4abdac;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  z-index: -1;
+}
+
 .testo{
   font-family: 'Roboto Slab', serif;
   color: white;
 }
 
+.testoImmagini{
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  float: left;
+  width: 30%;
+}
+
 .cardstitle{
   font-family: 'Passion One', cursive;
   color:white;
+  font-size: 5vh;
+}
+
+.cardstitleImamgini{
+  font-family: 'Passion One', cursive;
   font-size: 5vh;
 }
 
@@ -152,12 +202,28 @@ body{
   width: 7vw;
   float:left;
   opacity: .5;
+  border-radius: 5px;
+  padding: 1px;
 }
 
 .thumbnail:hover{
   opacity: 1;
   cursor: pointer;
 }
+
+.immagineOriginale{
+  height: 40vh;
+  float: right;
+  border-radius: 5px;
+}
+
+.titolo{
+  height: 100%;
+  padding-left: 13%;
+}
+
+
+
 
 a:link {
    color: black;
